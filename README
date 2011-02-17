@@ -1,0 +1,11 @@
+Usage
+=====
+
+$ rails generate autologin
+$ rake db:migrate
+$ rails c
+
+irb> "http://localhost:3000/" + Autologin.create!(:user => User.first).generate_link
+ => "http://localhost:3000/autologin/fc676094daf50da4fb236779ced7eb78"
+
+Copyright (c) 2011 Tomasz Bak, released under the MIT license

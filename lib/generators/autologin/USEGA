@@ -1,0 +1,6 @@
+Description:
+    Copies autologin.rb to app/models/.
+    Copies create_autologin.rb to db/migrate
+
+Examples:
+    `rails generate autologin`
