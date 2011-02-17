@@ -1,6 +1,4 @@
-Usage
-=====
-
+$ rails plugin install git@github.com:tb/autologin.git
 $ rails generate autologin
 $ rake db:migrate
 $ rails c
