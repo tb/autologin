@@ -14,6 +14,7 @@ class AutologinController < ApplicationController
     if autologin = Autologin.authorize(params[:code])
       if request.env['warden'].present?
         # devise
+        request.env['warden'].reset_session!
         request.env['warden'].set_user(autologin.user, { :scope => :user })
       else
         # default
